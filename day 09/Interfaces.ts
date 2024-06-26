@@ -1,10 +1,10 @@
-interface TakePhoto {
+interface TakePhotos {
     cameraMode: string;
     filter: string;
     burstMode: number;
 }
 
-class Instagram implements TakePhoto {
+class Instagram implements TakePhotos {
     constructor(
         public cameraMode: string,
         public filter: string,
@@ -16,7 +16,7 @@ class Instagram implements TakePhoto {
     }
 }
 
-class SnapChat implements TakePhoto {
+class SnapChat implements TakePhotos {
     constructor(
         public cameraMode: string,
         public filter: string,
